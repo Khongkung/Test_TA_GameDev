@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Computer Game Development 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #e94560;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        header p {
+            font-size: 1.2em;
+            color: #a2a8d3;
+        }
+        .lab-list {
+            display: grid;
+            gap: 20px;
+        }
+        .lab-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .lab-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+        }
+        .lab-card h2 {
+            color: #e94560;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .lab-card .lab-number {
+            display: inline-block;
+            background: #e94560;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .lab-card p {
+            margin-bottom: 15px;
+            color: #ddd;
+            line-height: 1.6;
+        }
+        .lab-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .lab-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .lab-card ul li:last-child {
+            border-bottom: none;
+        }
+        .lab-card a {
+            color: #4db8ff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .lab-card a:hover {
+            color: #e94560;
+            text-decoration: underline;
+        }
+        .pending {
+            color: #888;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #888;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portfolio</h1>
+            <p>วิชา Computer Game Development | ปี 2026</p>
+        </header>
+
+        <div class="lab-list">
+            <div class="lab-card">
+                <span class="lab-number">LAB 1</span>
+                <h2>แนะนำตัวเอง</h2>
+                <p>หน้าเว็บแนะนำตัวส่วนตัว</p>
+                <a href="">ไปยัง Lab 1 →</a>
+            </div>
+
+            <div class="lab-card">
+                <span class="lab-number">LAB 2</span>
+                <h2>My First 2D Game</h2>
+                <ul>
+                    <li>
+                        <strong>ภารกิจ 1:</strong>
+                        <a href="lab1.html">game21.html</a>
+                    </li>
+                    <li>
+                        <strong>ภารกิจ 2:</strong>
+                        <a href="">game22.html</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lab-card">
+                <span class="lab-number">LAB 3</span>
+                <h2>Lab 3</h2>
+                <p class="pending">เร็วๆ นี้...</p>
+            </div>
+
+            <div class="lab-card">
+                <span class="lab-number">LAB 4</span>
+                <h2>Lab 4</h2>
+                <p class="pending">เร็วๆ นี้...</p>
+            </div>
+
+            <div class="lab-card">
+                <span class="lab-number">LAB 5</span>
+                <h2>Lab 5</h2>
+                <p class="pending">เร็วๆ นี้...</p>
+            </div>
+
+            <div class="lab-card">
+                <span class="lab-number">LAB 6</span>
+                <h2>Lab 6</h2>
+                <p class="pending">เร็วๆ นี้...</p>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 Computer Game Development
+        </footer>
+    </div>
+</body>
+</html>
